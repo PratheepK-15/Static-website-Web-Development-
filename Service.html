@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expertise - Yuvooz</title>
+  <link rel="canonical" href="https://www.yuvooz.com/about-us">
+  <meta name="description" content="Discover Yuvooz Digital Marketing’s full range of services, including SEO, content creation, PPC, social media marketing, and web design. Customized strategies designed to enhance your brand’s visibility, engagement, and growth.">
+  <link rel="icon" href="img/logo-favicon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="Service.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R3285VP0FX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-R3285VP0FX');
+  </script>
+</head>
+
+<body >
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light ">
+    <div class="container">
+      <a class="navbar-brand " href="index.html">
+        <img class="p-2" src="img/logo web.png" alt="Logo" class="img-fluid">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+          
+          <!-- Expertise with hover-based dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link active" href="Service.html" id="expertiseLink">
+              EXPERTISE
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="Service.html#seo-section">SEO</a></li>
+              <li><a class="dropdown-item" href="Service.html#cm-section">Content Marketing</a></li>
+              <li><a class="dropdown-item" href="Service.html#ppc-section">PPC</a></li>
+              <li><a class="dropdown-item" href="Service.html#smm-section">SMM</a></li>
+              <li><a class="dropdown-item" href="Service.html#wd-section">Web Design & Development</a></li>
+            </ul>
+          </li>
+  
+          <li class="nav-item"><a class="nav-link" href="aboutus.html">OUR STORY</a></li>
+          <li class="nav-item"><a class="nav-link " href="news&updates.html">NEWS & UPDATES</a></li>
+          <li class="nav-item"><a class="nav-link contact-nav px-3" href="contact us.html">CONTACT US</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <SCript>
+    // dropdown
+let dropdownTimeout;
+const expertiseLink = document.getElementById('expertiseLink');
+const dropdownMenu = expertiseLink.nextElementSibling;
+
+expertiseLink.addEventListener('mouseover', () => {
+  clearTimeout(dropdownTimeout);
+  dropdownMenu.style.display = 'block';
+});
+
+expertiseLink.addEventListener('mouseleave', () => {
+  dropdownTimeout = setTimeout(() => {
+    dropdownMenu.style.display = 'none';
+  }, 300); // 300ms delay
+});
+
+dropdownMenu.addEventListener('mouseover', () => {
+  clearTimeout(dropdownTimeout);
+});
+
+dropdownMenu.addEventListener('mouseleave', () => {
+  dropdownTimeout = setTimeout(() => {
+    dropdownMenu.style.display = 'none';
+  }, 300); // 300ms delay
+});
+  </script>
+  
+<!-- Full-Screen Background Section -->
+<div class="full-screen-bg d-flex align-items-center justify-content-center text-center">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-7">
+                <h1 class="block-effect" style="--td: 1.2s">
+                    <div class="block-reveal" style="--bc: #0E3E66; --d: .1s;color: #cc1100;"> Grow through our </div>
+                    <div class="block-reveal" style="--bc: #ffffff; --d: .3s;color: #cc1100;">  spectrum of services</div>
+                  </h1>
+                <p class="description mb-5">
+                    Our expert team at Yuvooz Digital Marketing offers SEO, PPC, Content Marketing, Social Media Management, and Web Design to drive impactful, measurable results for your business."
+                </p>
+                <div class="button-group d-flex flex-column flex-sm-row justify-content-center align-items-center gap-3 mt-4">
+                    <a href="contact us.html" class="btn btn-primary cta-btn">Contact Us</a>
+                    <a href="aboutus.html" class="btn btn-primary cta-btn">More About Us</a>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <img src="img/WHAT WE OFFER.svg" alt="What we offer Image" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- What we offer -->     
+<div class="container my-5">
+    <h2 class="wwo-title text-center mb-5">What We Offer</h2>
+
+    <!-- First Row -->
+    <div class="row">
+        <div class="col-md-4 mb-4 d-flex">
+            <div class="card card-custom card-seo h-100 w-100 text-center d-flex flex-column position-relative">
+                <h2 class="card-title-initial">Search Engine<br> Optimization</h2>
+                <h3 class="pt-4">Search Engine Optimization</h3>
+                <p class="px-3 py-4">
+                    Our SEO strategies enhance your search rankings, and services are designed to boost your website's visibility on major search engines like Google.
+                </p>
+                <div class="mt-auto pb-4">
+                    <a href="Service.html#seo-section" class="btn btn-link">LEARN MORE</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4 d-flex">
+            <div class="card card-custom card-ppc h-100 w-100 text-center d-flex flex-column position-relative">
+                <h2 class="card-title-initial">Pay Per Click</h2>
+                <h3 class="pt-4">Pay Per Click</h3>
+                <p class="px-3 py-4">
+                    Our PPC campaigns are optimized to drive quality traffic and increase conversions with cost-effective results.
+                </p>
+                <div class="mt-auto pb-4">
+                    <a href="Service.html#ppc-section" class="btn btn-link">LEARN MORE</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4 d-flex">
+            <div class="card card-custom card-cm h-100 w-100 text-center d-flex flex-column position-relative">
+                <h2 class="card-title-initial">Content Marketing</h2>
+                <h3 class="pt-4">Content Marketing</h3>
+                <p class="px-3 py-4">
+                    Our content marketing strategies help engage audiences, building awareness and loyalty for your brand.
+                </p>
+                <div class="mt-auto pb-4">
+                    <a href="Service.html#cm-section" class="btn btn-link">LEARN MORE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Row -->
+    <div class="row mt-4">
+        <div class="col-md-4 offset-md-2 mb-4 d-flex">
+            <div class="card card-custom card-smm h-100 w-100 text-center d-flex flex-column position-relative">
+                <h2 class="card-title-initial">Social Media Marketing</h2>
+                <h3 class="pt-4">Social Media Marketing</h3>
+                <p class="px-3 py-4">
+                    We help your brand connect with audiences across social media platforms, building engagement and loyalty.
+                </p>
+                <div class="mt-auto pb-4">
+                    <a href="Service.html#smm-section" class="btn btn-link">LEARN MORE</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4 d-flex">
+            <div class="card card-custom card-wd h-100 w-100 text-center d-flex flex-column position-relative">
+                <h2 class="card-title-initial">Web Design</h2>
+                <h3 class="pt-4">Web Design & Development</h3>
+                <p class="px-3 py-4">
+                    We build user-friendly, visually stunning, and responsive websites that align with your business goals.
+                </p>
+                <div class="mt-auto pb-4">
+                    <a href="Service.html#wd-section" class="btn btn-link">LEARN MORE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="service-container" id="seo">
+    <!-- Top Section: Title, Description on the left, Image on the right -->
+    <div class="service-top">
+        <div class="service-content-left">
+            <h2 class="service-heading">Search Engine Optimization</h2>
+            <p>Our SEO solutions focus on increasing your website’s visibility, driving organic traffic,
+                and improving its position in search engine results .From keyword research and
+                on-page optimization to backlink building and technical audits, we ensure a tailored
+                approach to boost your online presence. Elevate your search rankings with
+                data-driven strategies and ongoing SEO tools for long-term success.</p>
+                <div class="service-content-right">
+                    <img src="img/SEO final.svg" alt="SEO Services">
+                </div>
+        </div>
+    </div>
+    <!-- Tabs -->
+    <div class="tab-container">
+        <div class="tab-buttons">
+            <button class="tab-link active" onclick="openTab(event, 'values')">Our Values</button>
+            <button class="tab-link" onclick="openTab(event, 'features')">Features</button>
+            <button class="tab-link" onclick="openTab(event, 'approaches')">Approaches</button>
+        </div>
+        
+        <div id="values" class="tab-content active">
+            <ul class="cards5">
+                <li class="card5">
+                    <h2>Our Values</h2>
+                    <div class="card-details">
+                        <div class="detail-item">
+                            <span class="icon">🔍</span>
+                            <p><strong>Transparency:</strong> Clear, honest updates throughout the SEO process.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">💡</span>
+                            <p><strong>Innovation:</strong> Using cutting-edge SEO tools and practices.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">🎯</span>
+                            <p><strong>Client-Centric:</strong> Tailored strategies to achieve your business goals.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">🌱</span>
+                            <p><strong>Sustainability:</strong> Focus on long-term, ethical SEO methods.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        <div id="features" class="tab-content">
+            <ul class="cards5">
+                <li class="card5">
+                    <h2>Features</h2>
+                    <div class="card-details">
+                        <div class="detail-item">
+                            <span class="icon">🔑</span>
+                            <p><strong>Keyword Optimization:</strong> Targeting high-traffic, relevant search terms.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">📝</span>
+                            <p><strong>On-Page SEO:</strong> Enhancing content, meta tags, and HTML for better visibility.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">🔗</span>
+                            <p><strong>Backlink Strategy:</strong> Authority-driven link-building for credibility.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">📊</span>
+                            <p><strong>SEO Audits:</strong> In-depth audits to highlight growth opportunities.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        <div id="approaches" class="tab-content">
+            <ul class="cards5">
+                <li class="card5">
+                    <h2>Approaches</h2>
+                    <div class="card-details">
+                        <div class="detail-item">
+                            <span class="icon">🔄</span>
+                            <p><strong>Holistic SEO:</strong> Integrating on-page, off-page, and technical SEO.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">📈</span>
+                            <p><strong>Data Insights:</strong> Keyword and competitor analysis for accurate strategies.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">🌐</span>
+                            <p><strong>Sustainable Traffic:</strong> White-hat SEO for long-term traffic growth.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">📉</span>
+                            <p><strong>Performance Tracking:</strong> Regular monitoring with detailed reports.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+</div>
+
+<div class="service-container" id="content-marketing">
+    <div class="service-top">
+        <div class="service-content-left">
+            <h2 class="service-heading">Content Marketing</h2>
+            <p>Our content creation services deliver engaging, SEO-optimized content
+                designed to enhance brand visibility and connect with your target audience.
+                We craft compelling articles, blogs, social media posts, and more to drive
+                traffic and boost conversions. Tailored content strategies ensure your
+                message resonates across all platforms.</p>
+            <div class="service-content-right">
+                <img src="img/content final (2).svg" alt="Content Marketing Services">
+            </div>
+        </div>
+    </div>
+    <div class="tab-container">
+        <div class="tab-buttons">
+            <button class="tab-link active" onclick="openTab(event, 'values')">Our Values</button>
+            <button class="tab-link" onclick="openTab(event, 'features')">Features</button>
+            <button class="tab-link" onclick="openTab(event, 'approaches')">Approaches</button>
+        </div>
+        
+        <div id="values" class="tab-content active">
+            <ul class="cards5">
+                <li class="card5">
+                    <h2>Our Values</h2>
+                    <div class="card-details">
+                        <div class="detail-item">
+                            <span class="icon">🎨</span>
+                            <p><strong>Creativity:</strong> Developing innovative, attention-grabbing content.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">📋</span>
+                            <p><strong>Quality:</strong> Delivering well-researched, impactful content consistently.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">🔍</span>
+                            <p><strong>Relevance:</strong> Crafting content aligned with audience preferences.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">📢</span>
+                            <p><strong>Engagement:</strong> Driving conversions through compelling storytelling.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        <div id="features" class="tab-content">
+            <ul class="cards5">
+                <li class="card5">
+                    <h2>Features</h2>
+                    <div class="card-details">
+                        <div class="detail-item">
+                            <span class="icon">🌐</span>
+                            <p><strong>SEO Content:</strong> Content designed to boost search engine rankings.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">📱</span>
+                            <p><strong>Multi-Platform Content:</strong> For blogs, websites, and social media.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">🎯</span>
+                            <p><strong>Targeted Messaging:</strong> Aligning messages with audience interests.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">📌</span>
+                            <p><strong>Consistent Branding:</strong> Ensuring brand uniformity across platforms.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        <div id="approaches" class="tab-content">
+            <ul class="cards5">
+                <li class="card5">
+                    <h2>Approaches</h2>
+                    <div class="card-details">
+                        <div class="detail-item">
+                            <span class="icon">🔍</span>
+                            <p><strong>Research-Driven:</strong> Audience and keyword research for tailored content.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">🔧</span>
+                            <p><strong>Custom Strategies:</strong> Unique content strategies for each brand.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">🌐</span>
+                            <p><strong>Cross-Channel Distribution:</strong> Messaging across relevant platforms.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">📊</span>
+                            <p><strong>Continuous Optimization:</strong> Improving performance with ongoing tweaks.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+</div>
+
+<div class="service-container" id="ppc">
+    <div class="service-top">
+        <div class="service-content-left">
+            <h2 class="service-heading">Pay-Per-Click Advertising</h2>
+            <p>We offer targeted, data-driven PPC campaigns to drive relevant traffic and
+                boost conversions. Through precise keyword targeting and optimized ad strategies,
+                we help you get the most out of your ad spend. Achieve measurable growth with
+                custom pay-per-click solutions.</p>
+            <div class="service-content-right">
+                <img src="img/ppc.svg" alt="PPC Services">
+            </div>
+        </div>
+    </div>
+    <div class="tab-container">
+        <div class="tab-buttons">
+            <button class="tab-link active" onclick="openTab(event, 'values')">Our Values</button>
+            <button class="tab-link" onclick="openTab(event, 'features')">Features</button>
+            <button class="tab-link" onclick="openTab(event, 'approaches')">Approaches</button>
+        </div>
+        
+        <div id="values" class="tab-content active">
+            <ul class="cards5">
+                <li class="card5">
+                    <h2>Our Values</h2>
+                    <div class="card-details">
+                        <div class="detail-item">
+                            <span class="icon">💰</span>
+                            <p><strong>Cost Efficiency:</strong> Maximizing ROI with budget-conscious strategies.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">📈</span>
+                            <p><strong>Results-Oriented:</strong> Focusing on high-quality traffic and conversions.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">📊</span>
+                            <p><strong>Data-Driven:</strong> Leveraging insights to enhance ad performance.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">🔄</span>
+                            <p><strong>Transparency:</strong> Clear reporting and honest insights every step of the way.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        <div id="features" class="tab-content">
+            <ul class="cards5">
+                <li class="card5">
+                    <h2>Features</h2>
+                    <div class="card-details">
+                        <div class="detail-item">
+                            <span class="icon">🔑</span>
+                            <p><strong>Keyword Targeting:</strong> Reaching the right audience with precise keywords.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">🔍</span>
+                            <p><strong>Search Ads:</strong> Top placement in search engines for maximum visibility.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">🖼</span>
+                            <p><strong>Display Ads:</strong> Eye-catching visual ads on relevant websites.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">📲</span>
+                            <p><strong>Retargeting:</strong> Bringing back potential customers with targeted ads.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        <div id="approaches" class="tab-content">
+            <ul class="cards5">
+                <li class="card5">
+                    <h2>Approaches</h2>
+                    <div class="card-details">
+                        <div class="detail-item">
+                            <span class="icon">📊</span>
+                            <p><strong>Performance Monitoring:</strong> Ongoing analysis to optimize results.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">🔧</span>
+                            <p><strong>Custom Strategy:</strong> PPC campaigns tailored to your industry needs.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">⏱</span>
+                            <p><strong>Rapid Adjustments:</strong> Quickly adapting strategies based on data.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">📉</span>
+                            <p><strong>Cost Management:</strong> Balancing costs with maximized ad efficiency.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+</div>
+
+<div class="service-container" id="smm">
+    <div class="service-top">
+        <div class="service-content-left">
+            <h2 class="service-heading">Social Media Marketing</h2>
+            <p>Our social media marketing (SMM) services focus on boosting brand awareness and
+                engaging your audience effectively across multiple platforms. We develop
+                customized content strategies that utilize social media to attract leads and drive
+                conversions. Achieve tangible results with our analytics-driven SMM approaches.</p>
+            <div class="service-content-right">
+                <img src="img/Social Media (2).svg" alt="Social Media Marketing Services">
+            </div>
+        </div>
+    </div>
+    <div class="tab-container">
+        <div class="tab-buttons">
+            <button class="tab-link active" onclick="openTab(event, 'values')">Our Values</button>
+            <button class="tab-link" onclick="openTab(event, 'features')">Features</button>
+            <button class="tab-link" onclick="openTab(event, 'approaches')">Approaches</button>
+        </div>
+        
+        <div id="values" class="tab-content active">
+            <ul class="cards5">
+                <li class="card5">
+                    <h2>Our Values</h2>
+                    <div class="card-details">
+                        <div class="detail-item">
+                            <span class="icon">🤝</span>
+                            <p><strong>Engagement:</strong> Building genuine connections with your audience.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">🔍</span>
+                            <p><strong>Authenticity:</strong> Creating relatable, trustworthy content.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">📣</span>
+                            <p><strong>Consistency:</strong> Maintaining a strong, continuous online presence.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">🌍</span>
+                            <p><strong>Community Focus:</strong> Fostering an active, loyal follower base.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        <div id="features" class="tab-content">
+            <ul class="cards5">
+                <li class="card5">
+                    <h2>Features</h2>
+                    <div class="card-details">
+                        <div class="detail-item">
+                            <span class="icon">📅</span>
+                            <p><strong>Content Calendars:</strong> Strategic planning for consistent posting.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">🎨</span>
+                            <p><strong>Custom Graphics:</strong> Eye-catching visuals for all social platforms.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">📈</span>
+                            <p><strong>Analytics:</strong> Measuring engagement, reach, and conversions.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">🎯</span>
+                            <p><strong>Audience Targeting:</strong> Reaching the right followers for your brand.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        <div id="approaches" class="tab-content">
+            <ul class="cards5">
+                <li class="card5">
+                    <h2>Approaches</h2>
+                    <div class="card-details">
+                        <div class="detail-item">
+                            <span class="icon">🕵‍♂</span>
+                            <p><strong>Competitive Analysis:</strong> Identifying opportunities through competitor insights.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">📱</span>
+                            <p><strong>Platform-Specific Strategy:</strong> Tailoring content for each social channel.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">💬</span>
+                            <p><strong>Interactive Campaigns:</strong> Polls, contests, and Q&As to boost engagement.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">💹</span>
+                            <p><strong>Performance Optimization:</strong> Fine-tuning based on real-time metrics.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+</div>
+
+<div class="service-container" id="web-design">
+    <div class="service-top">
+        <div class="service-content-left">
+            <h2 class="service-heading">Web Design Services</h2>
+            <p>Our web design and development services focus on creating visually appealing and
+                functional websites that enhance user experience. We specialize in responsive web
+                design, custom web development, and eCommerce solutions tailored to your
+                business needs. Achieve an online presence that drives engagement and
+                conversions with our expert services.</p>
+                <div class="service-content-right">
+                    <img src="img/Web Development 3.svg" alt="Web Design Services">
+                </div>
+        </div>
+    </div>
+    <div class="tab-container">
+        <div class="tab-buttons">
+            <button class="tab-link active" onclick="openTab(event, 'values')">Our Values</button>
+            <button class="tab-link" onclick="openTab(event, 'features')">Features</button>
+            <button class="tab-link" onclick="openTab(event, 'approaches')">Approaches</button>
+        </div>
+        
+        <div id="values" class="tab-content active">
+            <ul class="cards5">
+                <li class="card5">
+                    <h2>Our Values</h2>
+                    <div class="card-details">
+                        <div class="detail-item">
+                            <span class="icon">🎨</span>
+                            <p><strong>Creativity:</strong> Bringing unique, brand-reflective designs to life.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">🌟</span>
+                            <p><strong>Quality:</strong> Delivering high standards in design and functionality.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">👥</span>
+                            <p><strong>User-Focused:</strong> Prioritizing user experience and accessibility.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">💡</span>
+                            <p><strong>Innovation:</strong> Implementing the latest design trends and technology.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        <div id="features" class="tab-content">
+            <ul class="cards5">
+                <li class="card5">
+                    <h2>Features</h2>
+                    <div class="card-details">
+                        <div class="detail-item">
+                            <span class="icon">📱</span>
+                            <p><strong>Responsive Design:</strong> Optimizing layouts for all devices.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">🖌</span>
+                            <p><strong>Custom Graphics:</strong> Creating visuals that enhance brand identity.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">⚡</span>
+                            <p><strong>Fast Load Times:</strong> Ensuring swift performance and user retention.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">🌐</span>
+                            <p><strong>SEO-Friendly:</strong> Structuring sites to improve search engine ranking.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        <div id="approaches" class="tab-content">
+            <ul class="cards5">
+                <li class="card5">
+                    <h2>Approaches</h2>
+                    <div class="card-details">
+                        <div class="detail-item">
+                            <span class="icon">🔍</span>
+                            <p><strong>Research-Driven:</strong> Analyzing your brand to create targeted designs.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">🚀</span>
+                            <p><strong>Agile Development:</strong> Quickly iterating to meet project needs.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">🤝</span>
+                            <p><strong>Collaborative Approach:</strong> Aligning closely with your vision and goals.</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">✔</span>
+                            <p><strong>Testing & QA:</strong> Rigorous testing for a seamless user experience.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    // JavaScript for Tab Switching
+
+// Add event listeners to all buttons in every container
+document.querySelectorAll(".tab-link").forEach(button => {
+    button.addEventListener("click", function(event) {
+        openTab(event, this.getAttribute("onclick").split("'")[1]);
+    });
+});
+
+
+function openTab(event, tabId) {
+    // Get the closest .tab-container to scope the action to one set of tabs
+    const container = event.target.closest(".tab-container");
+
+    // Remove active class from all tab buttons and contents within the container
+    container.querySelectorAll(".tab-link").forEach(button => button.classList.remove("active"));
+    container.querySelectorAll(".tab-content").forEach(content => content.classList.remove("active"));
+
+    // Add active class to the clicked button and the associated tab content
+    event.currentTarget.classList.add("active");
+    container.querySelector(`#${tabId}`).classList.add("active");
+}
+
+</script>
+
+
+<!-- Footer Section -->
+<footer class="footer pt-5">
+    <div class="container">
+      <div class="row">
+        <!-- Let's Connect Section -->
+        <div class="col-md-3 mb-4">
+          <h2>Let's <br> Connect</h2>
+        </div>
+  
+        <!-- Services Section -->
+        <div class="col-md-3 mb-4">
+          <h5>SERVICES</h5>
+          <ul class="list-unstyled">
+            <li><a href="Service.html#seo-section" class="text-white text-decoration-none">SEO</a></li>
+            <li><a href="Service.html#cm-section" class="text-white text-decoration-none">Content Marketing</a></li>
+            <li><a href="Service.html#smm-section" class="text-white text-decoration-none">Social Media Marketing</a></li>
+            <li><a href="Service.html#ppc-section" class="text-white text-decoration-none">PPC</a></li>
+            <li><a href="Service.html#wd-section" class="text-white text-decoration-none">Web Design</a></li>
+          </ul>
+        </div>
+  
+        <!-- Quick Links Section -->
+        <div class="col-md-3 mb-4">
+          <h5>QUICK LINKS</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+            <li><a href="Service.html" class="text-white text-decoration-none">Expertise</a></li>
+            <li><a href="aboutus.html" class="text-white text-decoration-none">Our Story</a></li>
+            <li><a href="news&updates.html" class="text-white text-decoration-none">News & Updates</a></li>
+          </ul>
+        </div>
+  
+        <!-- Contact Section -->
+        <div class="col-md-3 mb-4">
+          <h5>CONTACT</h5>
+          <ul class="list-unstyled">
+            <li><a href="mailto:info@yuvooz.com" class="text-white text-decoration-none">info@yuvooz.com</a></li>
+            <li class="text-white">Una,Himachal Pradesh , India</li>
+            <li class="text-white">+91 9418548508</li>
+          </ul>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/people/Yuvooz-Marketing/61567056956147/"><img src="img/sociAL MEDIA ICONS/logo-facebook.png" alt="Facebook" class="social-icon img-fluid"></a>
+            <a href="https://www.instagram.com/yuvoozmarketing"><img src="img/sociAL MEDIA ICONS/logo-instagram.png" alt="Instagram" class="social-icon img-fluid"></a>
+            <a href="https://www.linkedin.com/company/yuvooz-marketing/posts/?feedView=all"><img src="img/sociAL MEDIA ICONS/logo-linkedin.png" alt="LinkedIn" class="social-icon img-fluid"></a>
+            <a href="https://www.youtube.com/@Yuvooz"><img src="img/sociAL MEDIA ICONS/logo-youtube.png" alt="YouTube" class="social-icon img-fluid"></a>
+            <a href="https://x.com/Yuvooz_digital"><img src="img/sociAL MEDIA ICONS/logo-X.png" alt="Twitter" class="social-icon img-fluid"></a> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="rights-reserved text-center py-2">
+        <p>© 2024 YUVOOZ All Rights Reserved</p>
+        <p>
+            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#privacyPolicyModal">Privacy Policy</a> |
+            <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#policyModal">Company Policy</a>
+        </p>
+    </div>
+  
+<!-- Company Policy Modal -->
+<div class="modal fade" id="policyModal" tabindex="-1" aria-labelledby="policyModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title align-items-center text-dark" id="policyModalLabel">Yuvooz Digital Marketing Agency Policy</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <ol class="ps-3">
+                    <li class="list-title">Welcome Statement</li>
+                    <p class="section-text">Welcome to Yuvooz! We're dedicated to providing exceptional, best-in-class complete digital marketing solutions to various industries. This policy outlines the relevant guidelines for using our services and ensures a positive and transparent experience for all.</p>
+
+                    <li class="list-title">Mission Statement</li>
+                    <p class="section-text">At Yuvooz, our mission is to empower businesses to reach their full potential through innovative, data-driven Digital marketing strategies that drive growth, enhance brand visibility, and foster lasting customer relationships.</p>
+                    <li class="list-title">Privacy Policy<br>Your Privacy is Our Priority</li>            
+                    <p class="section-text">At Yuvooz, we are committed to safeguarding your personal information. We collect and use your data only when necessary to provide our services effectively and securely. We will never share your personal information with third parties without your explicit consent, except as required by law.</p>
+                    <p class="list-title my-2">Data Collection and Use</p>
+                    <p class="section-text">Based on your consent, we collect personal data from you when you interact with our website, use our services, or communicate with our team. This may include your name, contact information, email address, and other relevant details. We use this information to:</p>
+
+                    <ul class="custom-list">
+                        <li>Deliver our services: We use your data to provide the services you have requested, such as SEO optimization, digital marketing campaigns, and customer support.</li>
+                        <li>Improve our services: We analyze your data to understand your needs and preferences better and continuously improve our offerings.</li>
+                        <li>Communicate with you: We may use your information to send you important updates, notifications, and marketing communications. You can opt out of these communications at any time.</li>
+                    </ul>
+                </ol class="ps-3">
+                    <p class="list-title">Data Security</p>
+                    <p class="section-text">We implement security measures to protect your personal data from unauthorized access, disclosure, alteration, or destruction. These measures include:</p>
+
+                    <ul class="custom-list">
+                        <li>Access Control: We restrict access to your personal information to authorized personnel only.</li>
+                        <li>Regular Monitoring: We regularly monitor our systems for security vulnerabilities and take prompt action to address any issues.</li>
+                    </ul>
+
+                    <p class="list-title my-2">Data Retention</p>
+                    <p class="section-text">We retain your personal data for as long as necessary to fulfill the purpose for which it was collected or as required by law. When your data is no longer needed, we securely delete or anonymize it.</p>
+                    <p class="list-title my-2">Your Rights</p>
+                    <p class="section-text">You have the following rights regarding your personal data:</p>
+                        <ul class="custom-list">
+                        <li>Access: You have the right to request access to the personal information we hold about you.</li>
+                        <li>Rectification: If you believe that the personal information we hold about you is inaccurate, you have the right to request its rectification.</li>
+                        <li>Erasure: In certain circumstances, you have the right to request the erasure of your personal data.</li>
+                        <li>Restriction of Processing: In certain circumstances, you have the right to request the restriction of processing your personal data.</li>
+                        <li>Data Portability: In certain circumstances, you have the right to request the transfer of your personal data to another organization.</li>
+                        <li>Object to Processing: You have the right to object to the processing of your personal data for certain purposes, such as direct marketing.</li>
+                    </ul>
+                <ol start="4">
+                    <!-- The Terms of Service section now starts as item 4 -->
+                    <li class="list-title">Terms of Service</li>
+                    <p class="section-text">By using our services, you agree to comply with our terms. This includes respecting intellectual property rights, maintaining ethical conduct, and adhering to applicable laws. You are responsible for ensuring the accuracy of the information you provide.</p>
+
+                    <li class="list-title">Refund Policy</li>
+                    <p class="section-text">We strive to deliver exceptional results for all clients. Refunds may be considered under specific circumstances, such as failure to meet any deliverables. Please contact us within 14 days of service completion for a refund request.</p>
+
+                    <li class="list-title">Code of Conduct</li>
+                    <p class="section-text">We expect all users to interact with Yuvooz staff and other users with professionalism and respect. Any instance of inappropriate or disruptive behavior will be considered for applicable actions and will be addressed on priority.</p>
+
+                    <li class="list-title">Intellectual Property Rights</li>
+                    <p class="section-text">All content on the Yuvooz website is the intellectual property of Yuvooz. Unauthorized use or reproduction is prohibited.</p>
+
+                    <li class="list-title">Amendments to Policy</li>
+                    <p class="section-text">Yuvooz reserves the right to update this policy.
+                       <!-- Add the note section here -->
+                        <div class="note-section">
+                            <strong>Note:</strong> This revised policy incorporates feedback from the previous responses, addressing potential issues with clarity, conciseness, and avoiding plagiarism. It maintains the core elements of the original policy while providing a more refined and professional presentation.
+                        </div>
+   
+
+                    <li class="list-title">Contact Information</li>
+                    <p class="section-text">For any questions or concerns, please contact us at:
+                        <br>- Email: <a href="mailto:info@yuvooz.com">info@yuvooz.com</a>
+                        <br>- Website: <a href="http://www.yuvooz.com">www.yuvooz.com</a>
+                    </p>
+
+                    <li class="list-title">Disclaimer</li>
+                    <p class="section-text">While we strive for accuracy, Yuvooz is not responsible for any unintended consequences or liabilities arising from incorrect data, errors, or omissions. Our services are provided "as is," and we make no guarantees regarding specific results or outcomes.</p>
+                </ol >
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Privacy Policy Modal -->
+<div class="modal fade" id="privacyPolicyModal" tabindex="-1" aria-labelledby="privacyPolicyModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title text-dark" id="privacyPolicyModalLabel">Yuvooz Marketing Agency: Terms of Services and Privacy Policy</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+        <div class="modal-body">
+            <ul class="custom-list"></ul>
+            <li class="list-title">1. Introduction</li>
+            <p>Welcome to Yuvooz! We are dedicated to providing comprehensive digital marketing solutions tailored for diverse industries. By using our website and services, you agree to comply with the terms specified below. These terms are intended to ensure a clear and positive experience for all users.</p>
+            <li class="list-title">2. Our Mission</li>
+            <p>At Yuvooz, our goal is to assist businesses in achieving their full potential through innovative and data-driven digital marketing strategies that promote growth, enhance brand visibility, and build enduring customer relationships.</p>
+       
+            <li class="list-title">Terms of Service</li>
+                <li class="list-title">3. Usage Terms</li>
+                <p>By accessing the Yuvooz website at <a href="http://www.yuvooz.com" class="text-decoration-none">www.yuvooz.com</a>, you agree to abide by these Terms of Service and all applicable laws. All the content on this site is secured by the appropriate copyright and trademark regulations.</p>
+
+                <li class="list-title">4. User Conduct Guidelines</li>
+                <p>Unless you receive explicit written permission from Yuvooz (you can contact us at <a href="mailto:info@yuvooz.com" class="text-decoration-none">info@yuvooz.com</a>), you are prohibited from:</p>
+            </ul class="custom-list">
+                <ul class="custom-list">
+                    <li>Reproducing, altering, or distributing any content found on the Yuvooz website.</li>
+                    <li>Utilizing any content from Yuvooz for commercial purposes or public display, whether for profit or not.</li>
+                    <li>Attempting to reverse-engineer or decompile any software on the Yuvooz site.</li>
+                    <li>Removing any copyright or proprietary notices from the materials.</li>
+                    <li>Transferring the materials to another individual or mirroring them on another server without authorization.</li>
+                </ul>
+
+                <li class="list-title">5. Disclaimer of Warranties</li>
+                <p>Yuvooz does not guarantee the accuracy, reliability, or completeness of the materials available on our website. We also do not assure that all content is up-to-date or error-free, and reliance on any material provided is at your own risk.</p>
+
+                <li class="list-title">6. Limitation of Liability</li>
+                <p>In no event shall Yuvooz or its partners be held liable for any damages, including loss of data, profit loss, or business disruptions, arising from the use or inability to use the materials on our website.</p>
+
+                <li class="list-title">7. Revisions and Errors</li>
+                <p>Materials on Yuvooz’s website may contain typographical, technical, or photographic errors. We reserve the right to change or update the materials at any time without prior notice, although we are not obligated to do so.</p>
+
+                <li class="list-title">8. External Links Disclaimer</li>
+                <p>Yuvooz is not responsible for the content found on external websites linked to from our site. Including a link does not mean we support or endorse that site. Use of any linked site is at the user’s own risk.</p>
+
+                <li class="list-title">9. Changes to Terms of Use</li>
+                <p>Yuvooz reserves the right to modify these terms at any time without prior notice. By using this website, you agree to be bound by the most recent version of these Terms of Service.</p>
+
+                <li class="list-title">10. Governing Law</li>
+                <p>Any claims related to Yuvooz’s website and services shall be governed by the laws of [jurisdiction], without regard to any conflict of law principles.</p>
+
+                <li class="list-title">11. Cookie Policy</li>
+                <p>Yuvooz utilizes cookies to enhance the user experience on our website. Cookies are small files placed on your device to collect information anonymously. You have the option to refuse cookies through your browser settings; however, certain features of our site may not function correctly if you do.</p>
+            </ul>
+            <li class="list-title no-bullet">Privacy Policy</li>
+            <p>At Yuvooz, we prioritize your privacy. This policy explains how we gather, utilize, and protect your personal information.</p>
+
+            <ul class="custom-list">
+                <li class="list-title">12. Data Collection and Utilization</li>
+                <p>We collect personal data when you engage with our website, use our services, or communicate with us. This may include:</p>
+                <ul class="custom-list">
+                    <li>Your name</li>
+                    <li>Contact information (email, phone number, etc.)</li>
+                    <li>Business-related information (e.g., company name, industry)</li>
+                    <li>Details regarding service requests and communication preferences</li>
+                </ul>
+                <p>We utilize this information to:</p>
+                <ul class="custom-list">
+                    <li>Provide Services: Your data is vital for delivering the digital marketing services you have requested, including SEO, PPC, and social media management.</li>
+                    <li>Enhance Services: We analyze your data to gain insights into your business needs and improve our strategies accordingly.</li>
+                    <li>Communicate: Your contact information may be used to send you updates, notifications, and marketing communications. You can unsubscribe from marketing emails whenever you choose.</li>
+                </ul>
+
+                <li class="list-title">13. Data Security Measures</li>
+                <p>We implement robust security measures to protect your personal information from unauthorized access, alteration, or destruction. Our security practices include encryption, regular monitoring, and limiting access to authorized personnel.</p>
+
+                <li class="list-title">14. Data Retention Policy</li>
+                <p>We will keep your personal data only for as long as it's needed to meet the goals in this policy or as required by law. When it's no longer necessary, we will either securely delete it or anonymize it.</p>
+
+                <li class="list-title">15. Your Rights</li>
+                <ul>
+                    <li><strong>Access:</strong> Ask to see the personal information we have about you.</li>
+                    <li><strong>Correction:</strong> Request changes to any information that is incorrect or incomplete.</li>
+                    <li><strong>Deletion:</strong> Request the deletion of your personal data in specific circumstances.</li>
+                    <li><strong>Restriction of Processing:</strong> Request limits on how we process your personal data.</li>
+                    <li><strong>Data Portability:</strong> Request the transfer of your data to another organization.</li>
+                    <li><strong>Object to Processing:</strong> Object to certain types of processing, such as marketing.</li>
+                </ul>
+
+                <li class="list-title">16. Cookies and Tracking Technologies</li>
+                <p>We use cookies and other tracking technologies to collect information about your browsing habits. These cookies allow us to understand how you interact with our website and enhance your experience. You can adjust your cookie preferences in your browser settings.</p>
+
+                <li class="list-title">17. Privacy Policy Amendments</li>
+                <p>Yuvooz may revise this privacy policy occasionally. Any updates will be posted on our website, and users will be notified of significant changes. It is your responsibility to review this policy periodically for updates.</p>
+
+                <li class="list-title">18. Contact Us</li>
+                <p>For any inquiries or concerns regarding your privacy, please contact us at:</p>
+                <ul>
+                    <li><strong>Email:</strong> <a href="mailto:info@yuvooz.com">info@yuvooz.com</a></li>
+                    <li><strong>Website:</strong> <a href="http://www.yuvooz.com">www.yuvooz.com</a></li>
+                </ul>
+
+                <li class="list-title">19. General Disclaimer</li>
+                <p>Yuvooz does not provide guarantees regarding specific outcomes from our services. All materials and services are offered "as is" without any warranties, and we disclaim any liability for errors or inaccuracies.</p>
+            </ul>
+        </div>
+        <div class="modal-footer justify-content-center">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+    </div>
+</div>
+</div>
+  </footer>
+  <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+  <script src="https://files.bpcontent.cloud/2024/10/16/14/20241016141528-7ENAT7IK.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>     
+</body>
+
+</html>

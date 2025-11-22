@@ -1,0 +1,503 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior:smooth;
+  }
+
+ /* Navbar Styling */
+.navbar {
+    background-color: #ffffff; 
+  }
+  
+  .navbar-nav .nav-item {
+    margin-right: 20px;
+    font-weight: bold;
+  }
+  
+  .nav-item .contact-nav {
+    border: 3px solid #cc1100;
+    padding: 5px;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  /* Dropdown Menu */
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .navbar .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 0.5rem;
+    min-width: 200px;
+    z-index: 1000;
+    opacity: 1;
+    visibility: visible;
+    background-color: #ffffff; 
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+  
+  .dropdown-menu .dropdown-item {
+    color: #0E3E66; 
+    padding: 10px 20px;
+    font-weight: bold; 
+    position: relative;
+  }
+  
+  .dropdown-menu .dropdown-item:hover {
+    color: #ef233c; 
+    background-color: transparent; 
+    cursor: pointer;
+  }
+  
+  .dropdown-menu .dropdown-item::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #00bbcc; 
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease;
+  }
+  
+  .dropdown-menu .dropdown-item:hover::after {
+    width: 100%; 
+  }
+  
+  /* Logo and Navbar */
+  .navbar-brand img {
+    height: 80px;
+    width: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-brand img {
+        height: 60px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .navbar-brand img {
+        height: 50px;
+    }
+  }
+  
+  /* Active Link Styling */
+  .navbar-nav .nav-link {
+    position: relative;
+    color: #0E3E66; 
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-nav .nav-link.active {
+    color: #0E3E66;
+    background-color: transparent;
+    border-bottom: 2px solid #0E3E66; 
+    padding-bottom: 2px;
+  }
+  
+  /* Hover Effect */
+  .navbar-nav .nav-link:hover {
+    color: #ef233c;
+  }
+  
+  .navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #00bbcc; 
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease;
+  }
+  
+  .navbar-nav .nav-link:hover::after {
+    width: 100%; 
+  }
+  
+  .navbar-nav .nav-link.active:hover {
+    color: #3C406F;
+    border-bottom: 2px solid #cc1100;
+  }
+
+  /* Navbar Styling */
+.navbar {
+  background-color: #ffffff;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.nav-item .contact-nav {
+  border: 3px solid #cc1100;
+  padding: 5px;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Dropdown Menu */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.navbar .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 0.5rem;
+  min-width: 200px;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  background-color: #ffffff;
+  border: none;
+  transition: all 0.3s ease, opacity 0.3s, visibility 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Show dropdown on hover with a smooth transition */
+.nav-item.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  display: block;
+}
+
+/* Hovering over the dropdown keeps it visible */
+.dropdown-menu:hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Dropdown Item Styling */
+.dropdown-menu .dropdown-item {
+  color: #0E3E66;
+  padding: 10px 20px;
+  font-weight: bold;
+  position: relative;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  color: #ef233c;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.dropdown-menu .dropdown-item::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #00bbcc;
+  bottom: -5px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.dropdown-menu .dropdown-item:hover::after {
+  width: 100%;
+}
+
+/* Logo and Navbar */
+.navbar-brand img {
+  height: 80px;
+  width: auto;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand img {
+      height: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand img {
+      height: 50px;
+  }
+}
+
+/* Active Link Styling */
+.navbar-nav .nav-link {
+  position: relative;
+  color: #0E3E66;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link.active {
+  color: #0E3E66;
+  background-color: transparent;
+  border-bottom: 2px solid #0E3E66;
+  padding-bottom: 2px;
+}
+
+/* Hover Effect */
+.navbar-nav .nav-link:hover {
+  color: #ef233c;
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #00bbcc;
+  bottom: -5px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+.navbar-nav .nav-link.active:hover {
+  color: #3C406F;
+  border-bottom: 2px solid #cc1100;
+}
+
+    
+ /* Global Box Sizing */
+    * {
+    box-sizing: border-box;
+    }
+
+    
+    .footer {
+      background-color: #0E3E66; 
+      width: 100vw; 
+      margin-left: calc(50% - 50vw); 
+    }
+    
+    .footer h2{
+      font-weight: bolder;
+      font-size: 3rem;
+      color:#ffff;
+    }
+    .footer h5 {
+      font-weight: bold;
+      color:#ffff;
+    }
+    
+    .footer a:hover {
+      text-decoration: underline;
+    }
+    
+    /* Let's Connect Section */
+    .connect-image {
+      max-width: 100%; 
+      height: auto;
+      margin-left: 5px;
+    }
+    
+    /* Social Icons */
+    .social-icon {
+      width: 40px;
+      height: auto;
+      mix-blend-mode: screen;
+      object-fit: contain;
+    }
+    
+    .social-icons {
+      display: flex;
+      justify-content: flex-start;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    
+    .rights-reserved {
+      background-color: #0E3E66; 
+      color: white; 
+    }
+    
+    .rights-reserved a {
+      margin: 0 10px; 
+      color: white; 
+      text-decoration: none; 
+    }
+    
+    .rights-reserved a:hover {
+      text-decoration: underline;
+    }
+    
+    
+    @media (max-width: 768px) {
+      .connect-image {
+        max-width: 40px; 
+      }
+    }
+    
+    @media (max-width:992px){
+      .footer h2{
+        font-size: 2.5rem;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .connect-image {
+        max-width: 35px; 
+      }
+    }
+    
+    .footer {
+      background-color: #0E3E66;
+    }
+    
+    .footer h2, .footer h5 {
+      font-weight: bold;
+    }
+    
+    .connect-image {
+      max-width: 150px;
+      height: auto;
+    }
+    
+    @media (max-width: 768px) {
+      .connect-image {
+        max-width: 120px;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .connect-image {
+        max-width: 100px;
+      }
+      .footer h2{
+        font-size: 3rem;
+      }
+    }
+    
+    .social-icons {
+      display: flex;
+      gap: 10px;
+    }
+      
+    .social-icon {
+      width: 40px;
+      height: auto;
+    }
+    
+    .list-title{
+      font-weight:bold ;
+    }
+    .no-bullet{
+    list-style-type: none; 
+    padding-left: 0; 
+    }
+
+    .modal-footer {
+      display: flex;
+      justify-content: center; /* Centers the button horizontally */
+    }
+     
+    @media (max-width: 576px) { /* Adjust max-width based on your mobile breakpoint */
+      .rights-reserved p {
+          margin: 0; /* Optional: to adjust spacing */
+      }
+      .rights-reserved p + p { /* Targets the second <p> */
+          display: inline-flex; /* Keeps the links on the same line */
+          gap: 5px; /* Optional: adds space between links */
+      }
+    }
+    
+    /* Modal Content Styling */
+.contact-modal-content {
+  animation: slideIn 0.1s ease-out;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 1, 0.5);
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.contact-modal-title {
+  color: #0E3E66;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.contact-form-label {
+  color: #0E3E66;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.contact-form-input {
+  width: 100%;
+  padding: 8px;
+  background-color: #d3d3d3;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Vertically center the modal */
+.contact-modal-dialog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Responsive adjustments for tablet and mobile views */
+@media (max-width: 768px) {
+  .contact-modal-dialog {
+    width: 85%; /* Reduced width for tablet */
+    max-width: 400px; /* Reduce max-width for better fit on tablet */
+  }
+
+  .contact-modal-content {
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  .contact-modal-title {
+    font-size: 1.3rem; /* Slightly smaller title font */
+  }
+
+  .contact-form-label, .contact-form-input {
+    font-size: 0.9rem; /* Smaller font for inputs and labels */
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-modal-dialog {
+    width: 95%; /* Smaller width for mobile */
+    max-width: 300px; /* Reduce max-width further for mobile */
+  }
+
+  .contact-modal-content {
+    padding: 10px; /* Compact padding for mobile */
+  }
+
+  .contact-modal-title {
+    font-size: 1.1rem; /* Smaller title font for mobile */
+  }
+
+  .contact-form-label, .contact-form-input {
+    font-size: 0.8rem; /* Adjusted font for smaller screens */
+  }
+}
+
+/* Ensure modal visibility and centering */
+.contact-modal.show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
